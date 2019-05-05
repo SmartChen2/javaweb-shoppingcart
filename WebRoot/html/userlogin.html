@@ -1,0 +1,31 @@
+<html>
+	<body background="../pic/b.jpg">
+		<h1 align = "center">用户登录 </h1>
+		<table border = "1" align = "center" width = "250">
+		<form action= "http://localhost:8080/pr/servlet/TryLogin" method="POST">
+			<tr >
+				<td>用户ID</td>
+				<td><input type= "text" name = "id"></td>
+			</tr>
+			<tr >
+				<td>密码</td>
+				<td><input type= "password" name = "pw"></td>
+			</tr>
+			
+			<tr >
+				<td colspan = "2"  align = "center">
+				
+					<input type= "submit", value = "登录">
+					<input type= "reset", value = "重置">
+				</td>
+			</tr>
+		</form>
+		
+		<td colspan = "2"  align = "center">
+				<a href="http://localhost:8080/pr/html/signup.html">注册</a>
+				<a href="http://localhost:8080/pr/html/admlogin.html">管理员入口</a>
+		</td>
+		
+		</table>
+	</body>
+</html>

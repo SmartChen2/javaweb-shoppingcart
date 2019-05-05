@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TryLogin</servlet-name>
+    <servlet-class>servlet.TryLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Welcome</servlet-name>
+    <servlet-class>servlet.Welcome</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdmTryLogin</servlet-name>
+    <servlet-class>servlet.AdmTryLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TrySignUp</servlet-name>
+    <servlet-class>servlet.TrySignUp</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserDao</servlet-name>
+    <servlet-class>dao.UserDao</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>User</servlet-name>
+    <servlet-class>bean.User</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>TryLogin</servlet-name>
+    <url-pattern>/servlet/TryLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Welcome</servlet-name>
+    <url-pattern>/servlet/Welcome</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdmTryLogin</servlet-name>
+    <url-pattern>/servlet/AdmTryLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TrySignUp</servlet-name>
+    <url-pattern>/servlet/TrySignUp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserDao</servlet-name>
+    <url-pattern>/servlet/UserDao</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>User</servlet-name>
+    <url-pattern>/servlet/User</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>/html/userlogin.html</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+<filter>
+<display-name>EncodingFilter</display-name>
+<filter-name>EncodingFilter</filter-name>
+<filter-class>filter.EncodingFilter</filter-class>
+<init-param>
+<param-name>encoding</param-name>
+<param-value>gb2312</param-value>
+</init-param>
+</filter>
+
+
+<filter-mapping>
+<filter-name>EncodingFilter</filter-name>
+<url-pattern>/*</url-pattern>
+</filter-mapping>
+
+
+
+    <error-page>
+  		<exception-type> java.lang.Exception </exception-type>
+  		<location>/error.jsp</location>
+  </error-page>
+</web-app>
